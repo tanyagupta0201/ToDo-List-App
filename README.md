@@ -8,17 +8,17 @@
 ## ✨ Screenshots
 
 <div style="display:flex;">
-<img src="ScreenShots/img01.jpeg" width="210">
-<img src="ScreenShots/img02.jpeg" width="210">
-<img src="ScreenShots/img03.jpeg" width="210">
-<img src="ScreenShots/img04.jpeg" width="210">
+<img src="ScreenShots/img01.jpeg" width="200">
+<img src="ScreenShots/img02.jpeg" width="200">
+<img src="ScreenShots/img03.jpeg" width="200">
+<img src="ScreenShots/img04.jpeg" width="200">
 </div>
 <br>
 <div style="display:flex;">
-<img src="ScreenShots/img05.jpeg" width="210">
-<img src="ScreenShots/img06.jpeg" width="210">
-<img src="ScreenShots/img07.jpeg" width="210">
-<img src="ScreenShots/img08.jpeg" width="210">
+<img src="ScreenShots/img05.jpeg" width="200">
+<img src="ScreenShots/img06.jpeg" width="200">
+<img src="ScreenShots/img07.jpeg" width="200">
+<img src="ScreenShots/img08.jpeg" width="200">
 </div>
 
 
