@@ -9,9 +9,12 @@ import kotlinx.android.synthetic.main.item_todo.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
+// first create adapter class. This inherits recycler view. Recycler view now requires view holder
 class TodoAdapter(val list: List<TodoModel>) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
-
+    // 3 functions of the view holder
+    // 1st func
+    // In this Layout inflatter is called which converts view in such a form that adapter can consume it
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         return TodoViewHolder(
             LayoutInflater.from(parent.context)
@@ -19,16 +22,21 @@ class TodoAdapter(val list: List<TodoModel>) : RecyclerView.Adapter<TodoAdapter.
         )
     }
 
-    override fun getItemCount() = list.size
 
+    override fun getItemCount() = list.size
+    
+    // 2nd func
+    // this will set data in each card
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
-        holder.bind(list[position])
+        holder.bind(list[position]) // we are passing the object of the list that we made in the ToDoModel.kt
     }
 
+    // 3rd func
     override fun getItemId(position: Int): Long {
         return list[position].id
     }
 
+    // view holder is present inside the recycler view
     class TodoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(todoModel: TodoModel) {
             with(itemView) {
